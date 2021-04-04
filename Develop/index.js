@@ -1,6 +1,7 @@
 const Manager = require("./lib/Manager");
-const Engineer = require(".lib/Engineer");
+const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
+const inquirer = require("inquirer");
 const path = require("path");
 const fs = require("fs");
 
@@ -10,30 +11,31 @@ const outputPath = path.join(OUTPUT_DIR, "team.html");
 const render = require("./lib/htmlRenderer");
 
 const teamMembers = [];
-const emptyId =[];
+const emptyId = [];
 
 const questionsEmployee = [
     {
         type: "input",
         name: "nameManager",
-        message: "Managers name?"
+        message: "What is the manager's name?"
     },
     {
         type: "input",
         name: "managerId",
-        message: "Managers ID?"
+        message: "What is the manager's ID?"
     },
     {
         type: "input",
         name: "emailManager",
-        message: "Managers email?"
+        message: "What is the manager's email?"
     },
     {
-    type: "input",
-    name: "officeNumber",
-    message: "Managers office number?"
+        type: "input",
+        name: "officeNumber",
+        message: "What is the manager's office number?"
     }
 ];
+
 
 function manager() {
     console.log("Let's build your team");
