@@ -10,3 +10,12 @@ const outputPath = path.join(OUTPUT_DIR, "team.html");
 const render = require("./lib/htmlRenderer");
 
 const teamMembers = [];
+const emptyId =[];
+
+const questionsEmployee = [
+    {
+        type: "input",
+        name: "nameManager",
+        message: "Managers name?"
+    },
+]
