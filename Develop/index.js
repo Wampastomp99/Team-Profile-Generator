@@ -21,16 +21,26 @@ const questionsEmployee = [
     {
         type: "input",
         name: "managerId",
-        message: "Managers ID?",
-    }
+        message: "Managers ID?"
+    },
     {
         type: "input",
         name: "emailManager",
-        message: "Managers email?",
-    }
+        message: "Managers email?"
+    },
     {
     type: "input",
     name: "officeNumber",
     message: "Managers office number?"
     }
 ];
+
+function manager() {
+    console.log("Let's build your team");
+    inquirer.prompt(questionsEmployee).then(function(data){
+        const manager = new Manager(data.nameManager, data.managerId, data.emailManager, data.officeNumber);
+        teamMembers.push(manager);
+        emptyId.push(data.managerId);
+        team();
+    });
+};
