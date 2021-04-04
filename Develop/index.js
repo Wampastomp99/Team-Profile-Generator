@@ -18,4 +18,19 @@ const questionsEmployee = [
         name: "nameManager",
         message: "Managers name?"
     },
-]
+    {
+        type: "input",
+        name: "managerId",
+        message: "Managers ID?",
+    }
+    {
+        type: "input",
+        name: "emailManager",
+        message: "Managers email?",
+    }
+    {
+    type: "input",
+    name: "officeNumber",
+    message: "Managers office number?"
+    }
+];
