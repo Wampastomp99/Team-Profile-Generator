@@ -13,7 +13,7 @@ npm i
 
 ## video
 
-https://drive.google.com/file/d/1AvgUy4qD9Aepi5Vwn5ZJ2tzqC7GSy-vT/view
+https://drive.google.com/file/d/13eNbey8Y_kkpyLc2qrLIEe_XF6HFVFTJ/view
 
 ## Github
 
